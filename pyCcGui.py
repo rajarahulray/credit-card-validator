@@ -30,7 +30,10 @@ def cc(card_number):
                 res += "\nType: American Express (AMEX) card."
             elif card_number[0:2] == "36":
                 res += "\nType: Diner’s Club International card."
-            elif card_number[0:2] == "51" or card_number[0:2] == "52" or card_number[0:2] == "53" or card_number[0:2] == "54" or card_number[0:2] == "55":
+            elif (card_number[0:2] == "51" or card_number[0:2] == "52" 
+                  or card_number[0:2] == "53" or card_number[0:2] == "54"
+                  or card_number[0:2] == "55"
+                  or card_nuber[0:4] == "2221" or card_number[0:4] == "2720"):
                 res += "\nType: Mastercard."
             elif card_number[0:4] == "6011":
                 res += "\nType: Discover card."
